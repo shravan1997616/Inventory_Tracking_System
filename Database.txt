@@ -1,0 +1,7 @@
+Database............
+1. CREATE TABLE student(id varchar(10) PRIMARY KEY, pass varchar(20),name varchar(50), email varchar(50));
+2. CREATE TABLE labincharge(id varchar(10) PRIMARY KEY, pass varchar(20),name varchar(50), email varchar(50),lab varchar(20));
+3. CREATE TABLE admin(id varchar(10) PRIMARY KEY, pass varchar(20),name varchar(50), email varchar(50));
+4. create table complain(cid varchar(15) primary key,id varchar(15),name varchar(50),lab varchar(20),title varchar(100),disc varchar(500),ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,status varchar(50));
+5. create table request(reqno varchar(20) primary key,scomno varchar(20),labname varchar(20),labincname varchar(50),labincid varchar(20),systemid varchar(20),titil varchar(100),mess varchar(500),status varchar(20),ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+6. CREATE TABLE computer (id varchar(20) NOT NULL,oper varchar(20),lab varchar(20) NOT NULL,status varchar(20),CONSTRAINT PK_Person PRIMARY KEY (id,lab));
